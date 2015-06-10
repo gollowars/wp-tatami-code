@@ -1,3 +1,8 @@
+.post {
+	margin-bottom: 30px;
+	border-bottom: solid 1px #eee;
+}
+
 .post img {
 	max-width: 100%!important;
 	height: auto!important;
@@ -5,5 +10,12 @@
 
 .post figure {
 	max-width: 100%!important;
-	height: auto!important;
+}
+
+.post iframe {
+	max-width: 100%!important;
+}
+
+input,textarea {
+	max-width: 100%;
 }

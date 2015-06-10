@@ -30,7 +30,13 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php
+				the_post_navigation(array(
+				    'prev_text' => '< %title',
+				    'next_text' => '%title >',
+				    'screen_reader_text'=>' '
+				));
+			?>
 
 		<?php else : ?>
 

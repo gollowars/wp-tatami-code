@@ -84,18 +84,22 @@ body {
 	color: #777;
 }
 
+@media (min-width: 768px) {
+	.tc-sidebar {
+		text-align: right;
+		position: fixed;
+		padding-right: 40px;
+		// height: 100%;
+		// overflow: scroll;
+	}
+}
+
 .tc-sidebar li {
 	list-style-type: none;
 }
 
 .tc-sidebar li a {
 	color: #777;
-}
-
-@media (min-width: 768px) {
-	.tc-sidebar {
-		text-align: right;
-	}
 }
 
 .tc-sidebar h4 {

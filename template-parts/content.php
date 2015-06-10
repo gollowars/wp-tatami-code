@@ -34,7 +34,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer blog-post-meta">
-		<?php tatami_code_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
