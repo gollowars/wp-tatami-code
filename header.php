@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand tc-navbar-brand" href="#"><img src="<?php echo esc_url ( get_stylesheet_directory_uri() ); ?>/images/logo.svg" width="164" alt=""></a>
+          <a class="navbar-brand tc-navbar-brand" href="/"><img src="<?php echo esc_url ( get_stylesheet_directory_uri() ); ?>/images/logo.svg" width="164" alt=""></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
         	<?php wp_nav_menu(array( 'container' => false, 'menu_class' => 'nav navbar-nav tc-nav-bar' ));?>
