@@ -13,8 +13,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="row">
+        <main class="col-sm-10 tc-blog-main">
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -41,8 +42,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+		</main><!-- .main -->
+		<?php get_sidebar(); ?>
+	</div><!-- .row -->
+	</div><!-- /.container -->
 <?php get_footer(); ?>

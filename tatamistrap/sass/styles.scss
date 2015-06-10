@@ -1,0 +1,173 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+body {
+	padding-top: 80px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+}
+
+#tc-bar {
+	background: url(/wp-content/themes/tatami-code/images/bg-tatami.jpg);
+	height: 7px;
+	background-size: cover;
+	background-position: left 60%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1050;
+}
+
+#tc-foot-bar {
+	background: url(/wp-content/themes/tatami-code/images/bg-tatami.jpg);
+	height: 7px;
+	background-size: cover;
+	background-position: left 60%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1050;
+}
+
+@media (min-width: 768px) {
+	.tc-navbar-header {
+	  border-bottom: none;
+	}
+}
+
+.tc-nav-bar {
+	font-size: 13px;
+}
+
+@media (min-width: 768px) {
+	.tc-nav-bar {
+		margin-left: 40px;
+	}
+}
+
+.tc-navbar-toggle {
+	margin-top: 20px;
+	border: none;
+}
+
+.tc-navbar-brand {
+	height: auto;
+}
+
+.navbar-nav.tc-nav-bar > li > a {
+	border-bottom: solid 1px #ededed;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav.tc-nav-bar > li > a {
+		padding-top: 30px;
+		padding-bottom: 10px;
+		border-bottom: none;
+	}
+}
+
+.tc-nav-bar > li > a:hover {
+	text-decoration: underline;
+}
+
+/*tc-sidebar*/
+.tc-sidebar {
+	float: left;
+	margin-top: 10px;
+	text-align: left;
+	color: #777;
+}
+
+.tc-sidebar li {
+	list-style-type: none;
+}
+
+.tc-sidebar li a {
+	color: #777;
+}
+
+@media (min-width: 768px) {
+	.tc-sidebar {
+		text-align: right;
+	}
+}
+
+.tc-sidebar h4 {
+	padding-bottom: 10px;
+	border-bottom: solid 1px #ededed;
+}
+
+.tc-sidebar {
+	font-size: ceil(($font-size-base * 0.85));
+}
+
+.tc-sidebar .sidebar-module {
+	margin-bottom: 30px;
+}
+
+/*tc-blog-main*/
+.tc-blog-main {
+	float: none;
+}
+@media (min-width: 768px) {
+	.tc-blog-main {
+		float: right;
+	}
+}
+
+.blog-post-meta {
+	margin-bottom: 20px;
+}
+
+.blog-post-meta,.blog-post-meta a {
+	color: #777;;
+}
+
+.pager {
+	text-align: left;
+}
+
+.pager li>a, .pager li>span {
+  display: inline-block;
+  margin-left: -14px;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: none;
+  border-radius: none;
+  text-decoration: underline;
+  font-size: ceil(($font-size-base * 0.80));
+}
+
+.nav-links {
+	margin: 10px 0 50px;
+	text-decoration: underline;
+	font-size: ceil(($font-size-base * 0.80));
+	overflow: hidden;
+}
+
+.nav-previous {
+	float: left;
+}
+
+.nav-next {
+	float: right;
+}
+
+/*footer*/
+.tc-copyright {
+	font-size: ceil(($font-size-base * 0.75));
+	float: right;
+	color: #444;
+}
+
+.tc-backtop {
+	float: left;
+	font-size: ceil(($font-size-base * 0.75));
+	text-decoration: underline;
+}

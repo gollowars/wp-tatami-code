@@ -7,13 +7,13 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="blog-post">
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h2 class="entry-title blog-post-title">', '</h2>' ); ?>
 
-		<div class="entry-meta">
+		<div class="blog-post-meta">
 			<?php tatami_code_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</div><!-- .blog-post-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -26,7 +26,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer blog-post-meta">
 		<?php tatami_code_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
