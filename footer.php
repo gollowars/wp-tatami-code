@@ -23,6 +23,7 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="<?php echo esc_url ( get_stylesheet_directory_uri() ); ?>/tatamistrap/javascripts/bootstrap.min.js"></script>
+<script src="<?php echo esc_url ( get_stylesheet_directory_uri() ); ?>/js/jquery.easing.1.3.js"></script>
+<script src="<?php echo esc_url ( get_stylesheet_directory_uri() ); ?>/tatamistrap/javascripts/bootstrap.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="blog-post">
 	<header class="entry-header">
-		<?php the_title( '<h2 class="entry-title blog-post-title">', '</a></h2>' ); ?>
+		<?php the_title( '<h2 class="entry-title blog-post-title">', '</h2>' ); ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="blog-post-meta">
 			<?php tatami_code_posted_on(); ?>

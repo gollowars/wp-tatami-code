@@ -148,3 +148,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+// カスタムヘッダー画像を設置
+$custom_header_defaults = array(
+		'default-image'          => get_bloginfo('template_url').'/img/wordpress-logo-hoz-rgb_small.png',
+		'width'                  => 164,
+		'height'                 => 40,
+		'header-text'            => false,	//ヘッダー画像上にテキストをかぶせる
+);
+add_theme_support( 'custom-header', $custom_header_defaults );

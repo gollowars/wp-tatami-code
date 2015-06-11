@@ -36,7 +36,13 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php
+				the_posts_pagination( array(
+				'prev_text'          => __( 'Previous', 'tatami-code' ),
+				'next_text'          => __( 'Next', 'tatami-code' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( '', 'tatami-code' ) . ' </span>',
+				'screen_reader_text'=>__( ' ','tatami-code' )
+			) );?>
 
 		<?php else : ?>
 

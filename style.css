@@ -1,21 +1,26 @@
-.post {
-	margin-bottom: 30px;
-	border-bottom: solid 1px #eee;
-}
+/*
+Theme Name: tatami-code
+Theme URI: http://tatami-code.com
+Author: Underscores.me
+Author URI: http://tatami-code.com
+Description: tatamicode theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tatami-code
+Tags:
 
-.post img {
-	max-width: 100%!important;
-	height: auto!important;
-}
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 
-.post figure {
-	max-width: 100%!important;
-}
+tatami-code is based on Underscores http://underscores.me/, (C) tatami-code,
+is distributed under the terms of the GNU GPL v2 or later.
 
-.post iframe {
-	max-width: 100%!important;
-}
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
 
-input,textarea {
-	max-width: 100%;
-}
+/*--------------------------------------------------------------
+# Content
+## Posts and pages
+--------------------------------------------------------------*/

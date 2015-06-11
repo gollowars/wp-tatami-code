@@ -34,12 +34,12 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 			<?php
-				the_post_navigation(array(
-				    'prev_text' => '< %title',
-				    'next_text' => '%title >',
-				    'screen_reader_text'=>' '
-				));
-			?>
+				the_posts_pagination( array(
+				'prev_text'          => __( 'Previous', 'tatami-code' ),
+				'next_text'          => __( 'Next', 'tatami-code' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( '', 'tatami-code' ) . ' </span>',
+				'screen_reader_text'=>__( ' ','tatami-code' )
+			) );?>
 
 		<?php else : ?>
 

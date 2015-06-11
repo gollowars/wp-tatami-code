@@ -1,11 +1,33 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# SASS IMPORT
+# tatami-code Layout
+	# Header
+	# Sidebar
+	# Blog Main
+		#post base style
+		#navigation and paging
+	# Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# SASS IMPORT
+--------------------------------------------------------------*/
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
 
 // Import custom Bootstrap variables
+//# Typography
+//# Elements colors
 @import "bootstrap-variables";
 
 // Import Bootstrap for Sass
 @import "bootstrap";
+
+/*--------------------------------------------------------------
+# tatami-code Layout
+--------------------------------------------------------------*/
 
 html {
 	min-height: 100%;
@@ -14,17 +36,17 @@ html {
 
 body {
 	position: relative;
-	/* コンテンツ部分の高さが画面に収まらない場合はコンテンツの高さに合わせる*/
-        height: auto !important;
-
-    /* コンテンツ部分の高さが画面より低い場合は画面の高さに合わせる*/
-    height: 100%;
-    min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
 	padding: 80px 0 40px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
 }
 
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 #tc-bar {
 	background: url(/wp-content/themes/tatami-code/images/bg-tatami.jpg);
 	height: 7px;
@@ -37,37 +59,33 @@ body {
 	z-index: 1050;
 }
 
-.blog-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	padding-top: 20px;
-}
-
-#tc-foot-bar {
-	background: url(/wp-content/themes/tatami-code/images/bg-tatami.jpg);
-	height: 7px;
-	background-size: cover;
-	background-position: left 60%;
-	width: 100%;
-	overflow: hidden;
-	z-index: 1050;
-}
-
 @media (min-width: 768px) {
 	.tc-navbar-header {
 	  border-bottom: none;
 	}
 }
 
-.tc-nav-bar {
+.tc-navbar-collapse {
+	padding: 0;
+}
+
+.navbar-nav.tc-nav-bar {
 	font-size: 13px;
+	margin: 0;
 }
 
 @media (min-width: 768px) {
-	.tc-nav-bar {
+	.navbar-nav.tc-nav-bar {
 		margin-left: 40px;
 	}
+}
+
+/*ヘッダーのcollap のeasing*/
+.collapsing {
+	-webkit-transition: height 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)!important;
+  -moz-transition: height 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)!important;
+  -o-transition: height 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)!important;
+  transition: height 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)!important;
 }
 
 .tc-navbar-toggle {
@@ -95,6 +113,9 @@ body {
 	text-decoration: underline;
 }
 
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
 /*tc-sidebar*/
 .tc-sidebar {
 	float: left;
@@ -134,6 +155,9 @@ body {
 	margin-bottom: 30px;
 }
 
+/*--------------------------------------------------------------
+# Blog Main
+--------------------------------------------------------------*/
 /*tc-blog-main*/
 .tc-blog-main {
 	float: none;
@@ -153,6 +177,33 @@ body {
 	color: #777;;
 }
 
+/*--------------------------------------------------------------
+# Blog Main > post base style
+--------------------------------------------------------------*/
+.post {
+	margin-bottom: 30px;
+	border-bottom: solid 1px #eee;
+}
+
+.post img {
+	max-width: 100%!important;
+	height: auto!important;
+}
+
+.post figure {
+	max-width: 100%!important;
+}
+
+.post iframe {
+	max-width: 100%!important;
+}
+
+input,textarea {
+	max-width: 100%;
+}
+/*--------------------------------------------------------------
+# Blog Main > navigation and paging
+--------------------------------------------------------------*/
 .pager {
 	text-align: left;
 }
@@ -170,7 +221,6 @@ body {
 
 .nav-links {
 	margin: 10px 0 50px;
-	text-decoration: underline;
 	font-size: ceil(($font-size-base * 0.80));
 	overflow: hidden;
 }
@@ -179,11 +229,35 @@ body {
 	float: left;
 }
 
+.page-numbers {
+	margin-right: 8px;
+}
+
 .nav-next {
 	float: right;
 }
 
-/*footer*/
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.blog-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-top: 20px;
+}
+
+#tc-foot-bar {
+	background: url(/wp-content/themes/tatami-code/images/bg-tatami.jpg);
+	height: 7px;
+	background-size: cover;
+	background-position: left 60%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1050;
+}
+
 .tc-copyright {
 	font-size: ceil(($font-size-base * 0.75));
 	float: right;
