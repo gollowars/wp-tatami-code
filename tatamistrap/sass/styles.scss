@@ -201,6 +201,10 @@ body {
 input,textarea {
 	max-width: 100%;
 }
+
+.post p {
+	word-wrap: break-word;
+}
 /*--------------------------------------------------------------
 # Blog Main > navigation and paging
 --------------------------------------------------------------*/
